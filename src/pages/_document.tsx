@@ -44,9 +44,12 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
 
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+            href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700"
             rel="stylesheet"
           />
+
+          <link rel="icon" href="https://quero2pay.com.br/wp-content/uploads/2021/04/cropped-q2pay_favicon-32x32.png" />
+
         </Head>
         <body>
           <Main />
