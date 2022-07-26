@@ -30,6 +30,11 @@ type AuthContextType = {
   logout: () => void;
 }
 
+type JwtReturn = {
+  exp: number,
+  sub: number,
+}
+
 export const AuthContext = createContext({} as AuthContextType);
 
 export function AuthProvider({ children }) {
@@ -41,7 +46,7 @@ export function AuthProvider({ children }) {
     (async () => {
       const { 'q2bank.accessToken': accessToken } = parseCookies();
       if (accessToken) {
-        const { sub, exp } = await jwt(accessToken);
+        const { sub, exp }: JwtReturn = await jwt(accessToken);
         const current_time = Date.now() / 1000;
         if (current_time > exp) {
           destroyCookie({}, 'q2bank.accessToken');
