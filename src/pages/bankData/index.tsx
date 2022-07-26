@@ -113,7 +113,7 @@ const BankData: React.FC = () => {
               </Card>
             )
           })}
-          {!!loading && <Stack style={{ margin: '10px', alignSelf: 'center' }} spacing={2}>
+          {!loading && <Stack style={{ margin: '10px', alignSelf: 'center' }} spacing={2}>
             <Pagination count={Math.ceil(total / 8)} page={page} onChange={handlePage} />
           </Stack>}
           {showModal && <ModalUpdate user={userUpdate} open={showModal} setOpen={setShowModal} />}
