@@ -87,6 +87,7 @@ export const Input = styled(TextField)`
   }
   @media (max-width: 920px) {
     width: 80%;
+    margin: 20px;
   }
 `
 export const SubmitButton = styled(Button)`
@@ -97,6 +98,7 @@ export const SubmitButton = styled(Button)`
   @media (max-width: 920px) {
     width: 60%;
     height: 6vh;
+    margin: 10px;
   }
 `
 export const Error = styled.b`
