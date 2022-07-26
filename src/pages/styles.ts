@@ -47,7 +47,7 @@ export const ContainerLogin = styled.div`
   width: 65%;
   @media (max-width: 920px) {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: row;
   }
 `
@@ -59,20 +59,29 @@ export const Form = styled.form`
   justify-content: space-around;
   border-radius: 13px;
   width: 40%;
-  height: 40vh;
+  min-height: 40vh;
   align-items: center;
   h1 {
     color: #256db1;
     font-size: 5rem;
   }
+  span {
+    color: #256db1;
+    margin: 10px;
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
   @media (max-width: 920px) {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
   }
 `
 
 export const Input = styled(TextField)`
   width: 80%;
+  margin: 10px;
   fieldset {
     border-radius: 13px;
   }

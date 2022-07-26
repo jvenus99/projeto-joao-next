@@ -1,5 +1,7 @@
 import React from "react"
 import { AppProps } from "next/app"
+import { wrapper } from "../store/store";
+
 import { ThemeProvider } from "styled-components"
 import { AuthProvider } from "../context/AuthContext";
 
@@ -17,4 +19,5 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   )
 }
 
-export default MyApp
+
+export default wrapper.withRedux(MyApp);
