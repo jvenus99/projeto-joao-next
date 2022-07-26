@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "server": "json-server db.json -m ./node_modules/json-server-auth -r routes.json --port 5000",
     "lint": "next lint"
   },
   "dependencies": {
