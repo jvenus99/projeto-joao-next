@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Head from 'next/head'
-import { Container, ContainerImage, ContainerLogin, Error, Form, Input, Section, SubmitButton } from './styles'
+import { Container, ContainerImage, ContainerLogin, Error, Form, Input, Section, SubmitButton } from '../styles/pages/login/styles'
 import { SiSpringsecurity } from 'react-icons/si'
 import { FaUserCog } from 'react-icons/fa'
 import { MdSettingsSuggest } from 'react-icons/md'

@@ -8,7 +8,7 @@ import { CircularProgress } from '@mui/material'
 import Router from "next/router";
 
 import { AuthContext } from '../../context/AuthContext'
-import { Container, ContainerImage, ContainerLogin, Error, Form, Input, Section, SubmitButton } from '../styles'
+import { Container, ContainerImage, ContainerLogin, Error, Form, Input, Section, SubmitButton } from '../../styles/pages/login/styles'
 
 
 
@@ -47,7 +47,7 @@ const Register: React.FC = () => {
   const onSubmit: React.FormEventHandler<HTMLFormElement> = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
-    const pass = Object.keys(form).forEach(key => {
+    Object.keys(form).forEach(key => {
       if (form[key] === '') {
         setLoading(false);
         setError(true);

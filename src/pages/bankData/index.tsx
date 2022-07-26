@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Pagination, Stack } from '@mui/material';
 
 import { getUsersData } from '../../services/bankDataController'
-import { Card, Container, Header } from './styles'
+import { Card, Container, Header } from '../../styles/pages/bankData/styles'
 import { AuthContext } from '../../context/AuthContext'
 import ModalUpdate from '../../components/modalUpdate'
 
