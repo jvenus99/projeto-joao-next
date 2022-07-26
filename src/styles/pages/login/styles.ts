@@ -58,7 +58,7 @@ export const Form = styled.form`
   background-color: white;
   justify-content: space-around;
   border-radius: 13px;
-  width: 40%;
+  min-width: 40%;
   min-height: 40vh;
   align-items: center;
   h1 {
@@ -80,13 +80,12 @@ export const Form = styled.form`
 `
 
 export const Input = styled(TextField)`
-  width: 80%;
-  margin: 10px;
+  min-width: 80%;
+  margin: 10px !important;
   fieldset {
     border-radius: 13px;
   }
   @media (max-width: 920px) {
-    width: 80%;
     margin: 20px;
   }
 `
